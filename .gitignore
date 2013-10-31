@@ -13,3 +13,12 @@ results
 
 npm-debug.log
 node_modules
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Test file
+test/
