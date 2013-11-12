@@ -1,9 +1,9 @@
 {
     "name": "mssql-memcached"
     , "description": "Microsoft SQL and Memcached Client"
-    , "version": "0.0.1"
+    , "version": "0.0.2"
     , "author": "Paulo McNally <paulomcnally@gmail.com>"
-    , "keywords": ["imdb", "movies"]
+    , "keywords": ["memcached", "sql", "mssql", "SQL Server"]
     , "dependencies": {
         "mssql": "0.3.4",
         "memcached": "0.2.6"
