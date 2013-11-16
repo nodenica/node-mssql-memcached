@@ -52,9 +52,8 @@ Connect with [mssql](https://nodei.co/npm/mssql/) and implement [memcached](http
     sql.setMemcachedServers( '0.0.0.0:11211' );
     sql.debug( true );
     var types = sql.types;
-    
-    
-        var mySimpleQuery = new sql.prepare({
+
+    var mySimpleQuery = new sql.prepare({
         query: 'SELECT foo FROM bar',
         connection: connection,
         cache: true,
