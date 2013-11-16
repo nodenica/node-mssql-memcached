@@ -58,7 +58,8 @@ Connect with [mssql](https://nodei.co/npm/mssql/) and implement [memcached](http
         query: 'SELECT foo FROM bar',
         connection: connection,
         cache: true,
-        lifetime: 86400
+        lifetime: 86400,
+        type: 'query'
     });
     
     mySimpleQuery.execute();
