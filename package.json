@@ -1,8 +1,14 @@
 {
     "name": "mssql-memcached"
     , "description": "Microsoft SQL and Memcached Client"
-    , "version": "0.0.2"
+    , "version": "0.0.3"
     , "author": "Paulo McNally <paulomcnally@gmail.com>"
+    , "contributors": [
+        {
+            "name": "Amós Rivera",
+            "email": "arivera.utpmp@gmail.com"
+        }
+    ]
     , "keywords": ["memcached", "sql", "mssql", "SQL Server"]
     , "dependencies": {
         "mssql": "0.3.4",
