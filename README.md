@@ -1,4 +1,4 @@
-# node-mssql-memcached [![Dependency Status](https://david-dm.org/patriksimek/node-mssql-memcached.png)](https://david-dm.org/patriksimek/node-mssql-memcached) [![NPM version](https://badge.fury.io/js/mssql-memcached.png)](http://badge.fury.io/js/mssql-memcached)
+# node-mssql-memcached [![Dependency Status](https://david-dm.org/paulomcnally/node-mssql-memcached.png)](https://david-dm.org/paulomcnally/node-mssql-memcached) [![NPM version](https://badge.fury.io/js/mssql-memcached.png)](http://badge.fury.io/js/mssql-memcached)
 
 [![NPM](https://nodei.co/npm/mssql-memcached.png)](https://nodei.co/npm/mssql-memcached/)
 
