@@ -1,8 +1,14 @@
 # node-mssql-memcached [![Dependency Status](https://david-dm.org/paulomcnally/node-mssql-memcached.png)](https://david-dm.org/paulomcnally/node-mssql-memcached) [![NPM version](https://badge.fury.io/js/mssql-memcached.png)](http://badge.fury.io/js/mssql-memcached)
 
-[![NPM](https://nodei.co/npm/mssql-memcached.png)](https://nodei.co/npm/mssql-memcached/)
+[![NPM](https://nodei.co/npm/mssql-memcached.png?downloads=true)](https://nodei.co/npm/mssql-memcached/)
 
 Connect with [mssql](https://nodei.co/npm/mssql/) and implement [memcached](https://nodei.co/npm/memcached/) in your projects.
+
+# What's New v0.0.13
+* Fix debugMsg params on removeKey
+* Fix errorMsge undefined on memcached.set
+* Autovalidate data type on addInput
+* Convert data to utf8
 
 # Stored Procedure Example
     var sql = require('mssql-memcached');
@@ -23,7 +29,8 @@ Connect with [mssql](https://nodei.co/npm/mssql/) and implement [memcached](http
         query: 'my_stored_procedure',
         connection: connection,
         cache: true,
-        lifetime: 86400
+        lifetime: 86400,
+        utf8: true
     });
     
     sp.addInput('param_one', types.Int, 1);
@@ -58,7 +65,8 @@ Connect with [mssql](https://nodei.co/npm/mssql/) and implement [memcached](http
         connection: connection,
         cache: true,
         lifetime: 86400,
-        type: 'query'
+        type: 'query',
+        utf8: true
     });
     
     mySimpleQuery.execute();
@@ -70,10 +78,3 @@ Connect with [mssql](https://nodei.co/npm/mssql/) and implement [memcached](http
     mySimpleQuery.error = function(error){
         console.log(error);
     };
-
-# Remove key from memcached example
-    var sql = require('mssql-memcached');
-
-    sql.setMemcachedServers( '0.0.0.0:11211' );
-    
-    sql.removeKey('my_key');
