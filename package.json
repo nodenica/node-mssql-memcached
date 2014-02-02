@@ -1,7 +1,7 @@
 {
     "name": "mssql-memcached"
     , "description": "Microsoft SQL and Memcached Client"
-    , "version": "0.0.13"
+    , "version": "0.0.14"
     , "author": "Paulo McNally <paulomcnally@gmail.com>"
     , "contributors": [
         {
@@ -11,10 +11,10 @@
     ]
     , "keywords": ["memcached", "sql", "mssql", "SQL Server"]
     , "dependencies": {
-        "mssql": "0.3.4",
+        "mssql": "0.5.0",
         "memcached": "0.2.6",
         "phpjs": "0.0.1",
-        "string": "1.7.0",
+        "string": "1.8.0",
         "tsdt": "0.0.1"
     }
     , "directories": { "lib": "./lib/mssql-memcached" }
